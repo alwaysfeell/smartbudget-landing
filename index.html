@@ -11,16 +11,19 @@
   <meta property="og:title" content="SmartBudget — Бакалаврська робота | Косілов В.О.">
   <meta property="og:description" content="Інформаційна система підтримки прийняття рішень щодо споживчих витрат. СумДУ, ІН-24, 2026.">
   <meta property="og:url" content="https://alwaysfeell.github.io/smartbudget-landing/">
+  <meta property="og:locale" content="uk_UA">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SmartBudget — Бакалаврська робота">
+  <meta name="twitter:description" content="Інформаційна система підтримки прийняття рішень щодо споживчих витрат.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "SmartBudget: Інформаційна система підтримки прийняття рішень щодо споживчих витрат",
-    "author": {"@type": "Person", "name": "Косілов В.О."},
+    "headline": "SmartBudget: Information Decision Support System for Consumer Expenditure",
+    "author": {"@type": "Person", "name": "Kosilov V.O."},
     "educationalLevel": "Bachelor",
-    "inLanguage": "uk",
-    "publisher": {"@type": "EducationalOrganization", "name": "Сумський державний університет"},
+    "inLanguage": ["uk", "en"],
+    "publisher": {"@type": "EducationalOrganization", "name": "Sumy State University"},
     "datePublished": "2026"
   }
   </script>
@@ -30,26 +33,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+  <a href="#main-content" class="skip-link" data-uk="Перейти до основного вмісту" data-en="Skip to main content">Перейти до основного вмісту</a>
 
   <header role="banner">
     <div class="container header-inner">
-      <div class="header-logo">
+      <div class="header-logo" aria-label="SmartBudget logo">
         <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
           <rect width="36" height="36" rx="8" fill="#2563eb"/>
           <text x="18" y="25" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">S</text>
         </svg>
         <span>SmartBudget</span>
       </div>
-      <nav role="navigation" aria-label="Головна навігація">
+
+      <nav role="navigation" aria-label="Main navigation">
         <ul>
-          <li><a href="#about">Про роботу</a></li>
-          <li><a href="#goals">Мета</a></li>
-          <li><a href="#methodology">Методологія</a></li>
-          <li><a href="#results">Результати</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+          <li><a href="#about" data-uk="Про роботу" data-en="About">Про роботу</a></li>
+          <li><a href="#goals" data-uk="Мета" data-en="Goals">Мета</a></li>
+          <li><a href="#methodology" data-uk="Методологія" data-en="Methodology">Методологія</a></li>
+          <li><a href="#results" data-uk="Результати" data-en="Results">Результати</a></li>
+          <li><a href="#contacts" data-uk="Контакти" data-en="Contacts">Контакти</a></li>
         </ul>
       </nav>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle" role="group" aria-label="Language / Мова">
+        <button class="lang-btn active" data-lang="uk" aria-pressed="true" title="Українська">UA</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button class="lang-btn" data-lang="en" aria-pressed="false" title="English">EN</button>
+      </div>
     </div>
   </header>
 
@@ -58,15 +69,17 @@
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <div class="badge" aria-label="Тип роботи">Бакалаврська робота · СумДУ · 2026</div>
-        <h1 id="hero-title">
-          SmartBudget
-          <span lang="en">/ Smart Budget</span>
-        </h1>
-        <p class="hero-subtitle" lang="uk">Інформаційна система підтримки прийняття рішень щодо споживчих витрат</p>
-        <p class="hero-subtitle-en" lang="en">Information Decision Support System for Consumer Expenditure Management</p>
-        <p class="hero-description">Система аналізу витрат, прогнозування бюджету та персоналізованих фінансових рекомендацій на основі правила 50/30/20 та сценарного моделювання.</p>
-        <div class="hero-keywords" aria-label="Ключові слова">
+        <div class="badge">
+          <span data-uk="Бакалаврська робота · СумДУ · 2026" data-en="Bachelor's Thesis · SSU · 2026">Бакалаврська робота · СумДУ · 2026</span>
+        </div>
+        <h1 id="hero-title">SmartBudget</h1>
+        <p class="hero-subtitle">
+          <span data-uk="Інформаційна система підтримки прийняття рішень щодо споживчих витрат" data-en="Information Decision Support System for Consumer Expenditure Management">Інформаційна система підтримки прийняття рішень щодо споживчих витрат</span>
+        </p>
+        <p class="hero-description">
+          <span data-uk="Система аналізу витрат, прогнозування бюджету та персоналізованих фінансових рекомендацій на основі правила 50/30/20 та сценарного моделювання." data-en="An expenditure analysis system with budget forecasting and personalized financial recommendations based on the 50/30/20 rule and scenario modelling.">Система аналізу витрат, прогнозування бюджету та персоналізованих фінансових рекомендацій на основі правила 50/30/20 та сценарного моделювання.</span>
+        </p>
+        <div class="hero-keywords" aria-label="Keywords">
           <span class="tag">Python</span>
           <span class="tag">Flask</span>
           <span class="tag">SQLite</span>
@@ -75,10 +88,10 @@
           <span class="tag">Bootstrap 5</span>
         </div>
         <div class="hero-cta">
-          <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Переглянути код на GitHub">
-            Переглянути на GitHub
-          </a>
-          <a href="#about" class="btn btn-secondary">Дізнатися більше</a>
+          <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+             data-uk="Переглянути на GitHub" data-en="View on GitHub">Переглянути на GitHub</a>
+          <a href="#about" class="btn btn-secondary"
+             data-uk="Дізнатися більше" data-en="Learn more">Дізнатися більше</a>
         </div>
       </div>
     </section>
@@ -86,24 +99,26 @@
     <!-- About -->
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="container">
-        <h2 id="about-title">Про роботу</h2>
+        <h2 id="about-title" data-uk="Про роботу" data-en="About the Thesis">Про роботу</h2>
         <div class="about-grid">
           <div class="about-text">
-            <h3>Актуальність теми</h3>
-            <p>В умовах зростання фінансової нестабільності та складності управління особистими фінансами більшість громадян не мають зручних інструментів для аналізу своїх витрат та прийняття обґрунтованих фінансових рішень. Наявні рішення або надто складні, або не адаптовані до українських реалій.</p>
-            <p>SmartBudget вирішує цю проблему через побудову доступної веб-системи з елементами DSS (Decision Support System), що аналізує витрати, виявляє аномалії, будує прогнози та надає персоналізовані рекомендації.</p>
+            <h3 data-uk="Актуальність теми" data-en="Relevance">Актуальність теми</h3>
+            <p data-uk="В умовах зростання фінансової нестабільності та складності управління особистими фінансами більшість громадян не мають зручних інструментів для аналізу своїх витрат та прийняття обґрунтованих фінансових рішень. Наявні рішення або надто складні, або не адаптовані до українських реалій."
+               data-en="In an era of growing financial instability, most people lack convenient tools for analysing their expenditure and making informed financial decisions. Existing solutions are either overly complex or not adapted to local realities.">В умовах зростання фінансової нестабільності та складності управління особистими фінансами більшість громадян не мають зручних інструментів для аналізу своїх витрат та прийняття обґрунтованих фінансових рішень. Наявні рішення або надто складні, або не адаптовані до українських реалій.</p>
+            <p data-uk="SmartBudget вирішує цю проблему через побудову доступної веб-системи з елементами DSS, що аналізує витрати, виявляє аномалії, будує прогнози та надає персоналізовані рекомендації."
+               data-en="SmartBudget addresses this by providing an accessible web system with DSS elements that analyses spending patterns, detects anomalies, builds forecasts and delivers personalised recommendations.">SmartBudget вирішує цю проблему через побудову доступної веб-системи з елементами DSS, що аналізує витрати, виявляє аномалії, будує прогнози та надає персоналізовані рекомендації.</p>
           </div>
           <div class="about-info">
             <dl class="info-list">
-              <dt>Студент</dt>
-              <dd>Косілов В.О.</dd>
-              <dt>Група</dt>
+              <dt data-uk="Студент" data-en="Student">Студент</dt>
+              <dd>Косілов В.О. / Kosilov V.O.</dd>
+              <dt data-uk="Група" data-en="Group">Група</dt>
               <dd>ІН-24</dd>
-              <dt>Університет</dt>
-              <dd>Сумський державний університет</dd>
-              <dt>Рік</dt>
+              <dt data-uk="Університет" data-en="University">Університет</dt>
+              <dd data-uk="Сумський державний університет" data-en="Sumy State University">Сумський державний університет</dd>
+              <dt data-uk="Рік" data-en="Year">Рік</dt>
               <dd>2026</dd>
-              <dt>Технологічний стек</dt>
+              <dt data-uk="Технологічний стек" data-en="Tech Stack">Технологічний стек</dt>
               <dd>Python, Flask, SQLite, Bootstrap 5</dd>
             </dl>
           </div>
@@ -114,21 +129,27 @@
     <!-- Goals -->
     <section id="goals" class="section section-alt" aria-labelledby="goals-title">
       <div class="container">
-        <h2 id="goals-title">Мета та завдання</h2>
+        <h2 id="goals-title" data-uk="Мета та завдання" data-en="Goals & Objectives">Мета та завдання</h2>
         <div class="goals-grid">
           <div class="goal-card">
             <div class="goal-number" aria-hidden="true">01</div>
-            <h3>Мета дослідження</h3>
-            <p>Розробити інформаційну веб-систему підтримки прийняття рішень, що автоматизує аналіз споживчих витрат та формує обґрунтовані фінансові рекомендації для кінцевого користувача.</p>
+            <h3 data-uk="Мета дослідження" data-en="Research Goal">Мета дослідження</h3>
+            <p data-uk="Розробити інформаційну веб-систему підтримки прийняття рішень, що автоматизує аналіз споживчих витрат та формує обґрунтовані фінансові рекомендації для кінцевого користувача."
+               data-en="To develop a web-based information decision support system that automates consumer expenditure analysis and generates evidence-based financial recommendations for end users.">Розробити інформаційну веб-систему підтримки прийняття рішень, що автоматизує аналіз споживчих витрат та формує обґрунтовані фінансові рекомендації для кінцевого користувача.</p>
           </div>
           <div>
-            <h3>Основні завдання</h3>
+            <h3 data-uk="Основні завдання" data-en="Key Objectives">Основні завдання</h3>
             <ol class="task-list" role="list">
-              <li>Провести аналіз предметної галузі управління споживчими витратами та наявних DSS-рішень</li>
-              <li>Спроектувати архітектуру MVC-застосунку з модулями аналітики, прогнозування та рекомендацій</li>
-              <li>Реалізувати модуль DSS з правилом 50/30/20, сценарним аналізом та оцінкою якості даних</li>
-              <li>Розробити інтерактивний дашборд із графіками, статистикою та аналізом цін</li>
-              <li>Провести тестування системи та оцінити якість рекомендацій</li>
+              <li data-uk="Провести аналіз предметної галузі управління споживчими витратами та наявних DSS-рішень"
+                  data-en="Analyse the domain of consumer expenditure management and existing DSS solutions">Провести аналіз предметної галузі управління споживчими витратами та наявних DSS-рішень</li>
+              <li data-uk="Спроектувати архітектуру MVC-застосунку з модулями аналітики, прогнозування та рекомендацій"
+                  data-en="Design an MVC application architecture with analytics, forecasting and recommendation modules">Спроектувати архітектуру MVC-застосунку з модулями аналітики, прогнозування та рекомендацій</li>
+              <li data-uk="Реалізувати модуль DSS з правилом 50/30/20, сценарним аналізом та оцінкою якості даних"
+                  data-en="Implement the DSS module with the 50/30/20 rule, scenario analysis and data quality assessment">Реалізувати модуль DSS з правилом 50/30/20, сценарним аналізом та оцінкою якості даних</li>
+              <li data-uk="Розробити інтерактивний дашборд із графіками, статистикою та аналізом цін"
+                  data-en="Build an interactive dashboard with charts, statistics and price analysis">Розробити інтерактивний дашборд із графіками, статистикою та аналізом цін</li>
+              <li data-uk="Провести тестування системи та оцінити якість рекомендацій"
+                  data-en="Test the system and evaluate the quality of generated recommendations">Провести тестування системи та оцінити якість рекомендацій</li>
             </ol>
           </div>
         </div>
@@ -138,27 +159,31 @@
     <!-- Methodology -->
     <section id="methodology" class="section" aria-labelledby="methodology-title">
       <div class="container">
-        <h2 id="methodology-title">Методологія</h2>
+        <h2 id="methodology-title" data-uk="Методологія" data-en="Methodology">Методологія</h2>
         <div class="method-grid">
-          <article class="method-card" aria-label="Архітектура">
+          <article class="method-card">
             <div class="method-icon" aria-hidden="true">⬡</div>
-            <h3>Архітектура MVC</h3>
-            <p>Розділення на шари Model (бізнес-логіка), View (Jinja2 + Bootstrap), Controller (Flask Blueprints). Чітка відповідальність кожного компонента.</p>
+            <h3 data-uk="Архітектура MVC" data-en="MVC Architecture">Архітектура MVC</h3>
+            <p data-uk="Розділення на шари Model (бізнес-логіка), View (Jinja2 + Bootstrap), Controller (Flask Blueprints). Чітка відповідальність кожного компонента."
+               data-en="Separation into Model (business logic), View (Jinja2 + Bootstrap) and Controller (Flask Blueprints) layers, each with a clear single responsibility.">Розділення на шари Model (бізнес-логіка), View (Jinja2 + Bootstrap), Controller (Flask Blueprints). Чітка відповідальність кожного компонента.</p>
           </article>
-          <article class="method-card" aria-label="DSS модуль">
+          <article class="method-card">
             <div class="method-icon" aria-hidden="true">◈</div>
-            <h3>Модуль DSS</h3>
-            <p>Правило 50/30/20 (потреби/бажання/заощадження), прогнозування трендів, сценарний аналіз та оцінка якості вхідних даних.</p>
+            <h3 data-uk="Модуль DSS" data-en="DSS Module">Модуль DSS</h3>
+            <p data-uk="Правило 50/30/20 (потреби/бажання/заощадження), прогнозування трендів, сценарний аналіз та оцінка якості вхідних даних."
+               data-en="The 50/30/20 rule (needs/wants/savings), trend forecasting, scenario analysis and input data quality assessment.">Правило 50/30/20 (потреби/бажання/заощадження), прогнозування трендів, сценарний аналіз та оцінка якості вхідних даних.</p>
           </article>
-          <article class="method-card" aria-label="Аналітика">
+          <article class="method-card">
             <div class="method-icon" aria-hidden="true">◎</div>
-            <h3>Аналіз даних</h3>
-            <p>Статистичні звіти, графіки витрат, аналіз цін по категоріях, виявлення аномалій та персоналізовані рекомендації.</p>
+            <h3 data-uk="Аналіз даних" data-en="Data Analysis">Аналіз даних</h3>
+            <p data-uk="Статистичні звіти, графіки витрат, аналіз цін по категоріях, виявлення аномалій та персоналізовані рекомендації."
+               data-en="Statistical reports, expenditure charts, category-level price analysis, anomaly detection and personalised recommendations.">Статистичні звіти, графіки витрат, аналіз цін по категоріях, виявлення аномалій та персоналізовані рекомендації.</p>
           </article>
-          <article class="method-card" aria-label="База даних">
+          <article class="method-card">
             <div class="method-icon" aria-hidden="true">▦</div>
-            <h3>Зберігання даних</h3>
-            <p>SQLite база даних з ініціалізацією схеми та seed-даними. Структурований доступ через database.py з чітким API.</p>
+            <h3 data-uk="Зберігання даних" data-en="Data Storage">Зберігання даних</h3>
+            <p data-uk="SQLite база даних з ініціалізацією схеми та seed-даними. Структурований доступ через database.py з чітким API."
+               data-en="SQLite database with schema initialisation and seed data. Structured access via database.py with a clean internal API.">SQLite база даних з ініціалізацією схеми та seed-даними. Структурований доступ через database.py з чітким API.</p>
           </article>
         </div>
       </div>
@@ -167,19 +192,22 @@
     <!-- Results -->
     <section id="results" class="section section-alt" aria-labelledby="results-title">
       <div class="container">
-        <h2 id="results-title">Очікувані результати</h2>
+        <h2 id="results-title" data-uk="Очікувані результати" data-en="Expected Results">Очікувані результати</h2>
         <div class="results-list">
           <div class="result-item">
-            <h3>Функціональна система</h3>
-            <p>Повноцінний веб-застосунок із дашбордом, модулями витрат, аналізу, рекомендацій, DSS, профілю та фінансових цілей.</p>
+            <h3 data-uk="Функціональна система" data-en="Functional System">Функціональна система</h3>
+            <p data-uk="Повноцінний веб-застосунок із дашбордом, модулями витрат, аналізу, рекомендацій, DSS, профілю та фінансових цілей."
+               data-en="A complete web application with a dashboard and modules for expenditure tracking, analysis, recommendations, DSS, user profile and financial goals.">Повноцінний веб-застосунок із дашбордом, модулями витрат, аналізу, рекомендацій, DSS, профілю та фінансових цілей.</p>
           </div>
           <div class="result-item">
-            <h3>Практична цінність</h3>
-            <p>Система надає реальну допомогу користувачам у контролі бюджету, виявленні надмірних витрат та плануванні фінансів.</p>
+            <h3 data-uk="Практична цінність" data-en="Practical Value">Практична цінність</h3>
+            <p data-uk="Система надає реальну допомогу користувачам у контролі бюджету, виявленні надмірних витрат та плануванні фінансів."
+               data-en="The system provides real assistance to users in budget control, identifying excessive spending and financial planning.">Система надає реальну допомогу користувачам у контролі бюджету, виявленні надмірних витрат та плануванні фінансів.</p>
           </div>
           <div class="result-item">
-            <h3>Відкритий код</h3>
-            <p>Проєкт розповсюджується під ліцензією MIT та доступний на GitHub для подальшого розвитку та дослідження.</p>
+            <h3 data-uk="Відкритий код" data-en="Open Source">Відкритий код</h3>
+            <p data-uk="Проєкт розповсюджується під ліцензією MIT та доступний на GitHub для подальшого розвитку та дослідження."
+               data-en="The project is released under the MIT licence and available on GitHub for further development and research.">Проєкт розповсюджується під ліцензією MIT та доступний на GitHub для подальшого розвитку та дослідження.</p>
           </div>
         </div>
       </div>
@@ -188,20 +216,22 @@
     <!-- Contacts -->
     <section id="contacts" class="section" aria-labelledby="contacts-title">
       <div class="container">
-        <h2 id="contacts-title">Контакти та посилання</h2>
+        <h2 id="contacts-title" data-uk="Контакти та посилання" data-en="Contacts & Links">Контакти та посилання</h2>
         <div class="contacts-grid">
-          <address class="contact-info" aria-label="Контактна інформація">
-            <p><strong>Автор:</strong> Косілов В.О.</p>
-            <p><strong>Група:</strong> ІН-24</p>
-            <p><strong>Університет:</strong> Сумський державний університет</p>
-            <p><strong>Науковий керівник:</strong> Будник М.М.</p>
+          <address class="contact-info">
+            <p><strong data-uk="Автор" data-en="Author">Автор</strong>: Косілов В.О. / Kosilov V.O.</p>
+            <p><strong data-uk="Група" data-en="Group">Група</strong>: ІН-24</p>
+            <p><strong data-uk="Університет" data-en="University">Університет</strong>: <span data-uk="Сумський державний університет" data-en="Sumy State University">Сумський державний університет</span></p>
+            <p><strong data-uk="Науковий керівник" data-en="Supervisor">Науковий керівник</strong>: Будник М.М.</p>
           </address>
           <div class="contact-links">
-            <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="GitHub репозиторій SmartBudget">
-              <span aria-hidden="true">↗</span> Репозиторій на GitHub
+            <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="link-card"
+               data-uk="Репозиторій на GitHub" data-en="GitHub Repository">
+              <span aria-hidden="true">↗</span> <span data-uk="Репозиторій на GitHub" data-en="GitHub Repository">Репозиторій на GitHub</span>
             </a>
-            <a href="https://github.com/alwaysfeell" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="GitHub профіль автора">
-              <span aria-hidden="true">↗</span> Профіль автора
+            <a href="https://github.com/alwaysfeell" target="_blank" rel="noopener noreferrer" class="link-card"
+               data-uk="Профіль автора" data-en="Author's Profile">
+              <span aria-hidden="true">↗</span> <span data-uk="Профіль автора" data-en="Author's Profile">Профіль автора</span>
             </a>
           </div>
         </div>
@@ -212,9 +242,46 @@
 
   <footer role="contentinfo">
     <div class="container footer-inner">
-      <p>© 2026 Косілов В.О. · ІН-24 · Сумський державний університет</p>
-      <p>Бакалаврська робота · MIT License</p>
+      <p>© 2026 Косілов В.О. · ІН-24 · <span data-uk="Сумський державний університет" data-en="Sumy State University">Сумський державний університет</span></p>
+      <p data-uk="Бакалаврська робота · MIT License" data-en="Bachelor's Thesis · MIT License">Бакалаврська робота · MIT License</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      const LANG_KEY = 'sb_lang';
+      let currentLang = localStorage.getItem(LANG_KEY) || 'uk';
+
+      const btns = document.querySelectorAll('.lang-btn');
+
+      function applyLang(lang) {
+        currentLang = lang;
+        localStorage.setItem(LANG_KEY, lang);
+
+        // Update html lang attribute
+        document.documentElement.lang = lang;
+
+        // Swap all [data-uk] / [data-en] text nodes
+        document.querySelectorAll('[data-uk][data-en]').forEach(el => {
+          const val = el.getAttribute('data-' + lang);
+          if (val) el.textContent = val;
+        });
+
+        // Update buttons aria-pressed
+        btns.forEach(btn => {
+          const isActive = btn.dataset.lang === lang;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-pressed', String(isActive));
+        });
+      }
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+      });
+
+      // Apply saved or default language on load
+      applyLang(currentLang);
+    })();
+  </script>
 </body>
 </html>
